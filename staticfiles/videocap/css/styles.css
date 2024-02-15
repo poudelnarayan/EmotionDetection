@@ -1,0 +1,5 @@
+.title {
+    font-family:  sans-serif; /* Use San Francisco font if available, fallback to Arial and sans-serif */
+    color: blue; /* Set text color to blue */
+    font-weight: bold; /* Make the text bold */
+}
