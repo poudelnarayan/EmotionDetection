@@ -1,0 +1,30 @@
+<!-- capture_photo.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion recognition</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'videocap/css/styles.css' %}"
+    />
+  </head>
+  <body>
+    <div class="fullscreen">
+      <div class="title-section">
+        <h1 class="title">Emotion recognition</h1>
+      </div>
+      <div class="body-section">
+        <div class="photo-section">
+          <img src="{% static "videocap/images/photos.jpg" %}"
+        </div>
+        <div class="songs"></div>
+      </div>
+
+      <div class="detected-emotion">You look {{ detected_emotion }}</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!-- capture_photo.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webcam Photo Capture</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'videocap/css/styles.css' %}"
+    />
+  </head>
+  <body>
+    <div class="fullscreen">
+      <div class="title-section">
+        <h1 class="title">Webcam Photo Capture</h1>
+      </div>
+      <div class="body-section">
+        <div class="video-section">
+          <video id="video" autoplay></video>
+          <button id="captureButton">Capture</button>
+          <script>
+            window.csrf_token = "{{csrf_token}}";
+            emotion = "{{ detected_emotion }}";
+            console.log("hello");
+            console.log(emotion);
+          </script>
+          <script src="{% static 'videocap/js/videocapture.js' %}"></script>
+        </div>
+        <div class="songs"></div>
+      </div>
+
+      <div class="detected-emotion">emotion: {{ detected_emotion }}</div>
+    </div>
+  </body>
+</html>
