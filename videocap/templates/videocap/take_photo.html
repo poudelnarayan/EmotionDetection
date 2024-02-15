@@ -23,16 +23,11 @@
           <button id="captureButton">Capture</button>
           <script>
             window.csrf_token = "{{csrf_token}}";
-            emotion = "{{ detected_emotion }}";
-            console.log("hello");
-            console.log(emotion);
           </script>
           <script src="{% static 'videocap/js/videocapture.js' %}"></script>
         </div>
         <div class="songs"></div>
       </div>
-
-      <div class="detected-emotion">emotion: {{ detected_emotion }}</div>
     </div>
   </body>
 </html>

@@ -19,7 +19,7 @@ captureButton.addEventListener("click", () => {
 
   // Send captured photo data to the server
 
-  fetch("/videocap/", {
+  fetch("/", {
     method: "POST",
     headers: {
       "X-CSRFToken": window.csrf_token,

@@ -8,6 +8,7 @@ from django.middleware.csrf import get_token
 from PIL import Image
 import io
 from django.http import JsonResponse
+import cv2
 
 
 def take_photo(request):
