@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, reverse
 from django.http import HttpResponse
-import cv2
 from tensorflow.keras.models import load_model
 from keras.models import model_from_json
 import numpy as np
